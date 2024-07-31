@@ -26,3 +26,18 @@ JSFuck is an esoteric and educational programming style based on the atomic part
 - Function    =>  ```[]["filter"]```
 - eval        =>  ```[]["filter"]["constructor"]( CODE )()```
 - window      =>  ```[]["filter"]["constructor"]("return this")()```
+
+### What's Happening Behind the Scenes?
+
+We've got a nifty little function that does the magic of summing up two numbers:
+
+```javascript
+function calculateSum() {
+    var num1 = document.getElementById('num1').value;
+    var num2 = document.getElementById('num2').value;
+    var sum = parseInt(num1) + parseInt(num2);
+    document.getElementById('result').innerHTML = "The sum is: " + sum;
+}
+```
+
+We’ve converted this function into JSFuck, and the converted code is safely tucked away in `script.js`.
